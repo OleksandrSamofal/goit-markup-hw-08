@@ -12,7 +12,10 @@ ul {
 body {
   background-color: $main-white-color;
   font-family: Roboto, sans-serif;
+  
+  
 }
+
 
 button {
   font-family: inherit;
@@ -29,6 +32,13 @@ input {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  /* outline: 2px solid red; */
+}
+
 .button:hover,
 .button:focus {
   color: $main-white-color;
@@ -42,8 +52,26 @@ input {
 .container {
   margin-left: auto;
   margin-right: auto;
-  width: 1200px;
+  max-width: 1200px;
+  // width: 100%;
   padding-left: 15px;
   padding-right: 15px;
-  
+  @media screen and (min-width: 480px) {
+    width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
 }
