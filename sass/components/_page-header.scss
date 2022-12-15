@@ -9,7 +9,15 @@ header {
     padding: 0;
     border: none;
     background-color: transparent;
+    &:hover, &:focus{
+      fill: var($accent-color);
+      background-color: aqua;
+    }
   }
+
+  
+
+
 
   .menu-button .icon-cross {
     display: none;

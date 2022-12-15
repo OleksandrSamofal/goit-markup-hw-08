@@ -14,6 +14,22 @@ body {
   font-family: Roboto, sans-serif;
 }
 
+@media screen and (min-width: 480px) {
+  section {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  section {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  section {
+    width: 1200px;
+  }
+}
+
 button {
   font-family: inherit;
 }
@@ -87,6 +103,10 @@ header {
   padding: 0;
   border: none;
   background-color: transparent;
+}
+.menu-button:hover, .menu-button:focus {
+  fill: var(#2196f3);
+  background-color: aqua;
 }
 
 .menu-button .icon-cross {
@@ -560,6 +580,15 @@ header {
   }
 }
 
+.feature {
+  margin: 0 auto;
+  padding-top: 60px;
+}
+
+.feature-list {
+  display: flex;
+  flex-wrap: wrap;
+}
 @media screen and (min-width: 768px) {
   .feature-list {
     display: flex;
@@ -702,6 +731,7 @@ header {
 }
 
 .secondary-section {
+  margin: 0 auto;
   background-color: #f5f4fa;
 }
 
@@ -774,9 +804,9 @@ header {
   list-style: none;
   content: "";
   display: flex;
+  flex-wrap: wrap;
   background-repeat: no-repeat;
   background-position: center;
-  padding: 0;
   gap: 30px;
 }
 
@@ -900,7 +930,6 @@ footer {
 }
 
 .footer-container {
-  display: flex;
   align-items: baseline;
   justify-content: space-between;
 }
@@ -959,9 +988,6 @@ footer {
 }
 
 .form-subscribe {
-  width: 570px;
-  height: 86px;
-  margin-left: 93px;
   position: relative;
   display: flex;
 }
@@ -977,8 +1003,8 @@ footer {
 }
 
 .subscribe-input {
-  width: 358px;
-  height: 50px;
+  width: 100%;
+  height: 50;
   background-color: #2f303a;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -995,7 +1021,7 @@ footer {
   padding-left: 28px;
   padding-right: 62px;
   position: absolute;
-  right: 0;
+  left: 0;
   bottom: 0;
   width: 200px;
   height: 50px;
