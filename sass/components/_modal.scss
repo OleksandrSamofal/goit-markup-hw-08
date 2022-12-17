@@ -10,7 +10,18 @@
     /* outline: 1px solid tomato; */
     margin-left: auto;
     margin-right: auto;
+
+    .policyty__field {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 0.85;
+      letter-spacing: 0.03em;
+      color: $secondary-text-color;
+    }
+
   }
+
+
   
   @media screen and (min-width: 768px) {
     width: 370px;
@@ -26,6 +37,14 @@
     /* outline: 1px solid tomato; */
     margin-left: auto;
     margin-right: auto;
+
+    .policyty__field {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 1.71;
+      letter-spacing: 0.03em;
+      color: $secondary-text-color;
+    }
   }
 
   }
@@ -90,13 +109,7 @@
   margin-bottom: 30px;
 }
 
-.policyty__field {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: $secondary-text-color;
-}
+
 
 .modal-submit {
   padding: 10px 52px;

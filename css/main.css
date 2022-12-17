@@ -102,10 +102,10 @@ header {
   padding: 0;
   border: none;
   background-color: transparent;
+  cursor: pointer;
 }
 .menu-button:hover, .menu-button:focus {
-  fill: var(#2196f3);
-  background-color: aqua;
+  fill: #2196f3;
 }
 @media screen and (min-width: 768px) {
   .menu-button {
@@ -157,7 +157,6 @@ header {
     line-height: 0.85;
     padding-top: 16px;
     padding-bottom: 16px;
-    outline: 1px solid teal;
   }
   .menu-header .header-nav {
     display: flex;
@@ -166,6 +165,9 @@ header {
     margin-top: 306px;
   }
   .menu-header .header-nav__contact {
+    display: none;
+  }
+  .menu-header .header-nav__icon {
     display: none;
   }
   .menu-header .header-nav__tel {
@@ -187,8 +189,35 @@ header {
     font-weight: 500;
     font-size: 24px;
     line-height: 0.85;
+    margin-top: 32px;
+    padding-left: 20px;
     align-self: center;
     align-items: center;
+  }
+  .menu-header .menu-link {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    color: #212121;
+    text-decoration: none;
+    list-style: none;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 0.82;
+    letter-spacing: 0.02em;
+    color: #2196f3;
+    padding: 0;
+    bottom: 64px;
+    left: 40px;
+  }
+  .menu-header .menu-link__item {
+    display: block;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+  }
+  .menu-header .menu-link__item:last-child {
+    border: none;
   }
 }
 @media screen and (min-width: 768px) {
@@ -248,7 +277,6 @@ header {
     line-height: 1.14;
     margin-right: 10px;
     align-self: center;
-    outline: 2px solid red;
   }
   .menu-header .icon-envelope,
 .menu-header .icon-smartphone {
@@ -270,6 +298,22 @@ header {
     line-height: 1.14;
     align-self: center;
     align-items: center;
+  }
+  .menu-header .header-nav__tel {
+    display: flex;
+    color: #757575;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    margin-right: 10px;
+    align-self: center;
+  }
+  .menu-header .header-nav__icon {
+    margin-right: 10px;
+  }
+  .menu-header .menu-link {
+    display: none;
   }
 }
 .main-nav {
@@ -312,10 +356,6 @@ header {
   align-self: center;
   align-items: center;
   /* outline: 2px solid blueviolet; */
-}
-
-.header-nav__icon {
-  margin-right: 10px;
 }
 
 .header-nav__contact:hover,
@@ -406,6 +446,13 @@ header {
     margin-left: auto;
     margin-right: auto;
   }
+  .form .policyty__field {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 0.85;
+    letter-spacing: 0.03em;
+    color: #757575;
+  }
 }
 @media screen and (min-width: 768px) {
   .form {
@@ -423,6 +470,13 @@ header {
     /* outline: 1px solid tomato; */
     margin-left: auto;
     margin-right: auto;
+  }
+  .form .policyty__field {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #757575;
   }
 }
 
@@ -481,14 +535,6 @@ header {
 .policyty {
   margin-top: 20px;
   margin-bottom: 30px;
-}
-
-.policyty__field {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: #757575;
 }
 
 .modal-submit {
@@ -865,6 +911,19 @@ header {
   background-color: rgba(47, 48, 58, 0.8);
 }
 
+@media screen and (min-width: 480px) {
+  .team-list {
+    text-align: center;
+    border-radius: 0px 0px 4px 4px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team-list {
+    display: flex;
+    text-align: center;
+    border-radius: 0px 0px 4px 4px;
+  }
+}
 .section-four {
   color: #212121;
   font-weight: 700;
@@ -903,12 +962,6 @@ header {
   /* border: 2px solid transparent; */
   border-radius: 50%;
   fill: #afb1b8;
-}
-
-.team-list {
-  text-align: center;
-  /* box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2); */
-  border-radius: 0px 0px 4px 4px;
 }
 
 .team-list .card {

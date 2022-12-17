@@ -9,10 +9,14 @@ header {
     padding: 0;
     border: none;
     background-color: transparent;
+    cursor: pointer;
     &:hover, &:focus{
-      fill: var($accent-color);
-      background-color: aqua;
+      fill: $accent-color;
+      // background-color: aqua;
     }
+
+
+
     @media screen and (min-width: 480px) {
   
     }
@@ -77,7 +81,7 @@ header {
       line-height: 0.85;
       padding-top: 16px;
       padding-bottom: 16px;
-      outline: 1px solid teal;
+      // outline: 1px solid teal;
     }
     .header-nav {
       display: flex;
@@ -88,6 +92,11 @@ header {
 
     .header-nav__contact{
       display: none;
+    }
+
+    .header-nav__icon{
+      display: none;
+      // margin-right: 10px;
     }
 
     .header-nav__tel{
@@ -115,10 +124,42 @@ header {
       font-size: 24px;
       line-height: 0.85;
       // margin-right: 10px;
+      margin-top: 32px;
+      padding-left: 20px;
       align-self: center;
       align-items: center;
   }
-    
+    .menu-link{
+      display: flex;
+      justify-content: center;
+      position: absolute;
+      color: $main-text-color;
+      text-decoration: none;
+      list-style: none;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 0.82;
+      letter-spacing: 0.02em;
+      color: $accent-color;
+      padding: 0;
+      bottom: 64px;
+      left: 40px;
+      // margin-top: 64px;
+      // padding-left: 40px;
+      // padding-bottom: 16px;
+      // outline: 1px solid teal;
+    }
+
+    .menu-link__item{
+      display: block;
+      padding-right: 10px;
+      padding-left: 10px;
+      border-right: 1px solid rgba(33, 33, 33, 0.2);
+    }
+
+    .menu-link__item:last-child{
+      border: none;
+    }
     
 
 
@@ -190,7 +231,7 @@ header {
     line-height: 1.14;
     margin-right: 10px;
     align-self: center;
-     outline: 2px solid red; 
+    //  outline: 2px solid red; 
   }
 
   .icon-envelope,
@@ -215,6 +256,26 @@ header {
     // margin-right: 10px;
     align-self: center;
     align-items: center;
+}
+
+.header-nav__tel{
+  display: flex;
+    color: $secondary-text-color;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    margin-right: 10px;
+    align-self: center;
+    // outline: 2px solid blueviolet;
+}
+
+.header-nav__icon{
+  margin-right: 10px;
+}
+
+.menu-link{
+  display: none;
 }
 
 
@@ -293,21 +354,9 @@ header {
       /* outline: 2px solid blueviolet; */
     }
   
-    .header-nav__icon{
-      margin-right: 10px;
-    }
+    
   
-  // .header-nav__tel{
-  //   display: flex;
-  //     color: $secondary-text-color;
-  //     text-decoration: none;
-  //     font-weight: 500;
-  //     font-size: 14px;
-  //     line-height: 1.14;
-  //     margin-right: 10px;
-  //     align-self: center;
-  //     outline: 2px solid blueviolet;
-  // }
+
   
  
     
