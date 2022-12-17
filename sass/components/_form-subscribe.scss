@@ -1,28 +1,93 @@
+
+
+
+
+
 .form-subscribe {
-    // width: 570px;
+  @media screen and (max-width: 479px){
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  @media screen and (min-width: 480px) {
+    // width: 150px;
     // height: 86px;
     // margin-left: 93px;
     position: relative;
     display: flex;
-
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
+  
+  @media screen and (min-width: 768px) {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  @media screen and (min-width: 1200px) {
+    width: 570px;
+    height: 86px;
+    margin-left: 93px;
+    position: relative;
+    display: flex;
+    // outline: 1px solid yellow;
+  }
+}
 
 .subscribe-text {
+  @media screen and (max-width: 479px){
     font-weight: 700;
     font-size: 14px;
-    line-height: 1.14;
+    line-height: 0.87;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: $main-white-color;
     margin-bottom: 20px;
+    text-align: center;
+
+  }
+
+
+
+  @media screen and (min-width: 480px) {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 0.87;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $main-white-color;
+    margin-bottom: 20px;
+    text-align: center;
   }
   
-  .subscribe-input {
-    // width: 358px;
-    // height: 50px;
+  @media screen and (min-width: 768px) {
+    
+  }
+  
+  @media screen and (min-width: 1200px) {
+    font-weight: 700;
+  font-size: 14px;
+  line-height: 0,87;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $main-white-color;
+  margin-bottom: 20px;
+  text-align: left;
+  }
+}
 
+.subscribe-input {
+  @media screen and (max-width: 479px){
     width: 100%;
-    height: 50;
+    height: 50px;
     background-color: $secondary-bgc;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -30,19 +95,93 @@
     padding: 15px 16px;
     color: $main-white-color;
   }
-  
-  .form-subscribe .subscribe-input::placeholder {
-    color: rgba(255, 255, 255, 0.6);
+
+  @media screen and (min-width: 480px) {
+    width: 450px;
+    height: 50px;
+    background-color: $secondary-bgc;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    padding: 15px 16px;
+    color: $main-white-color;
+
   }
   
-  .subscribe {
+  @media screen and (min-width: 768px) {
+   
+  }
+  
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+    height: 50px;
+    background-color: $secondary-bgc;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    padding: 15px 16px;
+    color: $main-white-color;
+  }
+}
+
+.form-subscribe .subscribe-input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.subscribe {
+  @media screen and (max-width: 479px){
     padding-left: 28px;
     padding-right: 62px;
-    position: absolute;
+    margin-top: 20px;
+    position: relative;
+    // position: absolute;
     // right: 0;
     // bottom: 0;
-    left: 0;
-    bottom: 0;
+    width: 200px;
+    height: 50px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border-color: transparent;
+    color: $main-white-color;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    background-color: $accent-color;
+    cursor: pointer;
+
+  }
+
+  @media screen and (min-width: 480px) {
+    padding-left: 28px;
+  padding-right: 62px;
+  margin-top: 20px;
+  position: relative;
+  // position: absolute;
+  // right: 0;
+  // bottom: 0;
+  width: 200px;
+  height: 50px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border-color: transparent;
+  color: $main-white-color;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  background-color: $accent-color;
+  cursor: pointer;
+  }
+  
+  @media screen and (min-width: 768px) {
+    padding-left: 28px;
+    padding-right: 62px;
+    margin-top: 20px;
+    position: relative;
+    // position: absolute;
+    // right: 0;
+    // bottom: 0;
     width: 200px;
     height: 50px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -57,7 +196,40 @@
     cursor: pointer;
   }
   
-  .icon-send {
+  @media screen and (min-width: 1200px) {
+    padding-left: 28px;
+  padding-right: 62px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 200px;
+  height: 50px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border-color: transparent;
+  color: $main-white-color;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  background-color: $accent-color;
+  cursor: pointer;
+  }
+}
+
+.icon-send {
+  @media screen and (max-width: 479px){
+    position: absolute;
+    display: block;
+    width: 24px;
+    height: 24px;
+    top: 13px;
+    right: 28px;
+    fill: $main-white-color;
+
+  }
+
+  @media screen and (min-width: 480px) {
     position: absolute;
     display: block;
     width: 24px;
@@ -66,3 +238,24 @@
     right: 28px;
     fill: $main-white-color;
   }
+  
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    display: block;
+    width: 24px;
+    height: 24px;
+    top: 13px;
+    right: 28px;
+    fill: $main-white-color;
+  }
+  
+  @media screen and (min-width: 1200px) {
+    position: absolute;
+    display: block;
+    width: 24px;
+    height: 24px;
+    top: 13px;
+    right: 28px;
+    fill: $main-white-color;
+  }
+}

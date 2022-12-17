@@ -16,6 +16,11 @@
   .clients-list {
     text-decoration: none;
     list-style: none;
+    display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    //  gap: 30px;
+    // margin: -15px;
     
     padding: 0;
       margin: 0;
@@ -85,11 +90,13 @@
     align-items: center;
     flex-direction: row;
     flex-wrap: nowrap;
-    width: 210px;
+    max-width: 210px;
     height: 92px;
     border: 1px solid $main-fill;
     border-radius: 4px;
     margin: 10px auto;
+    flex-basis: calc((100% - 4 * 15px) / 2);
+      margin: 15px;
 
     @media screen and (min-width: 480px) {
       flex-basis: calc((100% - 4 * 15px) / 2);

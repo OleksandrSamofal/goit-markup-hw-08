@@ -88,6 +88,7 @@ header {
       flex-direction: column-reverse;
       margin-left: auto;
       margin-top: 306px;
+      
     }
 
     .header-nav__contact{
@@ -165,6 +166,9 @@ header {
 
     }
 
+
+
+
     @media screen and (min-width: 768px) {
 
       
@@ -172,9 +176,10 @@ header {
     align-items: center;
     justify-content: space-between;
 
-    &.header-nav {
+    .header-nav {
       display: flex;
       flex-wrap: wrap;
+      justify-content: flex-end;
     }
 
  
@@ -221,6 +226,13 @@ header {
     display: flex;
     margin-left: auto;
   }
+  
+  // @media screen and (min-width: 768px){
+  //   display: flex;
+  //   flex-wrap: wrap;
+  //   justify-content: flex-end;
+  // }
+
 
   .header-nav__contact {
     display: flex;
@@ -234,17 +246,47 @@ header {
     //  outline: 2px solid red; 
   }
 
-  .icon-envelope,
+  .icon-envelope{
+    display: inline-block;
+    display: flex;
+    align-self: center;
+    margin-right: 10px;
+    fill: $secondary-text-color;
+    @media screen and (min-width: 768px) and  (max-width: 1199px) {
+      padding-bottom: 5px;
+    }
+    
+  }
+
   .icon-smartphone {
     display: inline-block;
     display: flex;
     align-self: center;
     margin-right: 10px;
     fill: $secondary-text-color;
+    @media screen and (min-width: 768px) and  (max-width: 1199px){
+      padding-top: 5px;
+    }
+    
+  }
+
+
+
+
+
+
+  .icon-envelope{
+    @media screen and (min-width: 1200px){
+      margin-left: 300px;
+    }
   }
 
   .header-nav__item + .header-nav__item {
-    margin-left: 50px;
+    @media screen and (min-width: 1200px){
+      margin-left: 40px;
+    }
+
+    
   }
   .header-nav__mail {
     display: flex;
@@ -281,6 +323,10 @@ header {
 
 
   }
+
+
+
+
     @media screen and (min-width: 1200px) {
         
       
@@ -298,10 +344,25 @@ header {
 
   
     .main-nav {
-    
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
+
+      @media screen and (max-width: 479px){
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+      }
+
+
+      @media screen and (min-width: 480px){
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      @media screen and (min-width: 1200px){
+        justify-content: flex-start;
+      }
+      
     }
 
     
