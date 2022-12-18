@@ -16,6 +16,12 @@ body {
   
 }
 
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 section{
   @media screen and (min-width: 480px) {
     width: 480px;
@@ -31,7 +37,7 @@ section{
   }
 
   @media screen and (min-width: 1200px) {
-    width: 1200px;
+    width: 100%;
     padding-top: 94px;
     padding-bottom: 94px;
   }

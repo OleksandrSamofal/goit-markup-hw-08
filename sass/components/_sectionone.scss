@@ -9,15 +9,61 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../image/backgroudhero.png);
+      url(../image/bgi/headerimg480.jpg);
     background-repeat: no-repeat;
     background-position: center;
     height: 600px;
     max-width: 1600px;
     background-size: cover;
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image:   url(../image/bgi/headerimg4802x.jpg);
+}
+   
+@media screen and (min-width: 768px) {
+background-image: url(../image/bgi/headerimg768.jpg);
+width: 100%;
 
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image:   url(../image/bgi/headerimg7682x.jpg);
+}
+}
+@media  (min-width: 1200px) {
+   background-image: url(../image/bgi/headerimg1200.jpg);
+width: 100%;
+   @media (min-device-pixel-ratio: 2),
+   (min-resolution: 192dpi), (min-resolution: 2dppx) {
+   background-image:   url(../image/bgi/headerimg12002x.jpg);
+
+}
+}
+}
+
+
+
+
+  // }
+
+  // @media screen and (min-width: 480px) {
   
-  }
+  // }
+  
+  // @media screen and (min-width: 768px) {
+   
+  // }
+  
+  // @media screen and (min-width: 1200px) {
+    
+  // }
+
+
+
+
+
+
+
   
   .title-one {
     color: $main-white-color;
@@ -56,4 +102,3 @@
     margin-top: 30px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   }
-

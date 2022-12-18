@@ -14,6 +14,12 @@ body {
   font-family: Roboto, sans-serif;
 }
 
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 @media screen and (min-width: 480px) {
   section {
     width: 480px;
@@ -30,7 +36,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   section {
-    width: 1200px;
+    width: 100%;
     padding-top: 94px;
     padding-bottom: 94px;
   }
@@ -309,6 +315,7 @@ header {
 @media screen and (min-width: 768px) and (min-width: 1200px) {
   .menu-header .icon-envelope {
     margin-left: 300px;
+    margin-right: 0;
   }
 }
 @media screen and (min-width: 768px) and (min-width: 1200px) {
@@ -328,6 +335,12 @@ header {
     align-items: center;
   }
 }
+@media screen and (min-width: 768px) and (min-width: 1200px) {
+  .menu-header .header-nav__mail {
+    font-size: 14px;
+    line-height: 0.85;
+  }
+}
 @media screen and (min-width: 768px) {
   .menu-header .header-nav__tel {
     display: flex;
@@ -338,6 +351,12 @@ header {
     line-height: 1.14;
     margin-right: 10px;
     align-self: center;
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 1200px) {
+  .menu-header .header-nav__tel {
+    font-size: 14px;
+    line-height: 0.85;
   }
 }
 @media screen and (min-width: 768px) {
@@ -433,12 +452,39 @@ header {
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/backgroudhero.png);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/bgi/headerimg480.jpg);
   background-repeat: no-repeat;
   background-position: center;
   height: 600px;
   max-width: 1600px;
   background-size: cover;
+}
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .section-one {
+    background-image: url(../image/bgi/headerimg4802x.jpg);
+  }
+}
+@media screen and (min-width: 768px) {
+  .section-one {
+    background-image: url(../image/bgi/headerimg768.jpg);
+    width: 100%;
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .section-one {
+    background-image: url(../image/bgi/headerimg7682x.jpg);
+  }
+}
+@media (min-width: 1200px) {
+  .section-one {
+    background-image: url(../image/bgi/headerimg1200.jpg);
+    width: 100%;
+  }
+}
+@media (min-width: 1200px) and (min-device-pixel-ratio: 2), (min-width: 1200px) and (min-resolution: 192dpi), (min-width: 1200px) and (min-resolution: 2dppx) {
+  .section-one {
+    background-image: url(../image/bgi/headerimg12002x.jpg);
+  }
 }
 
 .title-one {
@@ -1020,16 +1066,45 @@ header {
   fill: #afb1b8;
 }
 
-.team-list .card {
-  width: 270px;
-  margin-right: 30px;
-  background-color: #ffffff;
-  border-radius: 0px 0px 4px 4px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+@media screen and (max-width: 479px) {
+  .team-list .card {
+    width: 450px;
+    margin-right: 30px;
+    background-color: #ffffff;
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  }
 }
-
-.team-list .card:nth-child(4n) {
-  margin-right: 0;
+@media screen and (min-width: 480px) {
+  .team-list .card {
+    width: 450px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    background-color: #ffffff;
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  }
+}
+@media screen and (min-width: 768px) {
+  .team-list .card {
+    width: 354px;
+    margin-right: 0;
+    background-color: #ffffff;
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    flex-basis: calc((100% - 60px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team-list .card {
+    width: 270px;
+    margin-right: 0;
+    margin-bottom: 0;
+    background-color: #ffffff;
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    flex-basis: calc((100% - 120px) / 4);
+  }
 }
 
 .team-text {
@@ -1045,7 +1120,23 @@ header {
   padding-top: 30px;
   padding-bottom: 30px;
 }
-
+@media screen and (max-width: 479px) {
+  .members .card-description {
+    color: #757575;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 479px) {
+  .members .card-title {
+    color: #212121;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    text-align: center;
+  }
+}
 .regular-customers {
   margin: 0 auto;
 }
