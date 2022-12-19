@@ -144,7 +144,8 @@ header {
     height: 796px;
   }
   .menu-header.is-open {
-    display: block;
+    display: flex;
+    flex-direction: column;
   }
   .menu-header .site-nav {
     display: flex;

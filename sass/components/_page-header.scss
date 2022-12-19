@@ -51,7 +51,8 @@ header {
     text-align: center;
     font-size: 20px;
     &.is-open {
-      display: block;
+      display: flex;
+      flex-direction: column;
       
     }
       display: none;
@@ -389,6 +390,7 @@ header {
     }
     
     .main-nav__logo{
+      // display: block;
       color: $secondary-fill;
       font-family: Raleway, sans-serif;
       font-size: 26px;
@@ -397,6 +399,11 @@ header {
       padding-top: 24px;
       padding-bottom: 25px;
     }
+
+    // .menu-header.is-open .main-nav__logo{
+    //   display: none;
+    // }
+
   
     .main-nav__logo-color {
       color: $accent-color;
