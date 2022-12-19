@@ -85,6 +85,18 @@
 }
 
   .title-one {
+    @media screen and (max-width: 1199px){
+      color: $main-white-color;
+      text-align: center;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      font-weight: 900;
+      font-size: 26px;
+      line-height: 1.36;
+      margin-top: 0px;
+
+    }
+
     color: $main-white-color;
     text-align: center;
     letter-spacing: 0.06em;

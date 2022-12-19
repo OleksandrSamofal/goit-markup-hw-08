@@ -18,6 +18,13 @@
   }
 
   .team-list{
+    // @media screen and (max-width: 479px){
+    //   width: 100%;
+    // }
+
+
+
+
     @media screen and (min-width: 480px){
   // display: flex;
   text-align: center;
@@ -72,9 +79,19 @@
   
   .team-list .card {
 
-    @media screen and (max-width: 479px){
-      width: 450px;
-      margin-right: 30px;
+    // @media screen and (max-width: 320px){
+    //   width: 100%;
+    //   background-color: $main-white-color;
+    //   border-radius: 0px 0px 4px 4px;
+    //   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    // }
+    
+
+
+
+    @media screen and  (max-width: 479px){
+      width: 100%;
+      margin-bottom: 30px;
       background-color: $main-white-color;
       border-radius: 0px 0px 4px 4px;
       box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -142,6 +159,11 @@
   }
   
   .members {
+    @media screen and (max-width: 1199px){
+      padding-top: 30px;
+    padding-bottom: 24px;
+    }
+
     padding-top: 30px;
     padding-bottom: 30px;
 
@@ -169,10 +191,10 @@
 
     .card-title {
 
-      @media screen and (max-width: 479px){
+      @media screen and (max-width: 1199px){
         color: $main-text-color;
         font-weight: 700;
-        font-size: 18px;
+        font-size: 16px;
         line-height: 2;
         text-align: center;
       }
